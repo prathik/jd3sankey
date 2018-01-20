@@ -1,26 +1,29 @@
-# jd3sankey
+# jD3Sankey
 
 Build cool d3 sankey diagrams using a REPL.
 
-
+![Alt text](https://raw.githubusercontent.com/prathik/jd3sankey/master/ss.png?raw=true "Optional Title")
 
 # How to use
 
-```mvn package
+```bash
+mvn package
 cd target
 java -jar jd3sankey-1.0-SNAPSHOT.jar
-```shell
+```
 
 After entering the commands
 
-```
+```bash
 open index.html
-```shell
+```
 
 # Example
 
+Generating the Sankey diagram above.
+
 ```
-$ java -jar jd3sankey-1.0-SNAPSHOT.jar                              1 ↵
+$ java -jar jd3sankey-1.0-SNAPSHOT.jar                              
 Commands
 add <node-name> | example: add income
 link <source-node> <target-node> <value> | example link income savings 100000
@@ -34,9 +37,9 @@ add userb
 Enter a command and press enter
 add income
 Enter a command and press enter
-link prathik income 500000
+link usera income 500000
 Enter a command and press enter
-link lakshmi income 500000
+link userb income 500000
 Enter a command and press enter
 write
 Enter a command and press enter
@@ -85,4 +88,4 @@ Enter a command and press enter
 write
 Enter a command and press enter
 q
-```shell
+```
