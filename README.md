@@ -1,4 +1,4 @@
-# jd3sankey
+# jD3Sankey
 
 Build cool d3 sankey diagrams using a REPL.
 
