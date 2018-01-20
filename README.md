@@ -9,13 +9,13 @@ Build cool d3 sankey diagrams using a REPL.
 ```mvn package
 cd target
 java -jar jd3sankey-1.0-SNAPSHOT.jar
-```shell
+```
 
 After entering the commands
 
 ```
 open index.html
-```shell
+```
 
 # Example
 
