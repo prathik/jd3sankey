@@ -2,7 +2,7 @@
 
 Build cool d3 sankey diagrams using a REPL.
 
-
+![Alt text](https://raw.githubusercontent.com/prathik/jd3sankey/master/ss.png?raw=true "Optional Title")
 
 # How to use
 
@@ -20,8 +20,10 @@ open index.html
 
 # Example
 
+Generating the Sankey diagram above.
+
 ```
-$ java -jar jd3sankey-1.0-SNAPSHOT.jar                              1 ↵
+$ java -jar jd3sankey-1.0-SNAPSHOT.jar                              
 Commands
 add <node-name> | example: add income
 link <source-node> <target-node> <value> | example link income savings 100000
