@@ -6,14 +6,15 @@ Build cool d3 sankey diagrams using a REPL.
 
 # How to use
 
-```mvn package
+```shell
+mvn package
 cd target
 java -jar jd3sankey-1.0-SNAPSHOT.jar
 ```
 
 After entering the commands
 
-```
+```shell
 open index.html
 ```
 
@@ -85,4 +86,4 @@ Enter a command and press enter
 write
 Enter a command and press enter
 q
-```shell
+```
