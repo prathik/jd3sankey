@@ -37,9 +37,9 @@ add userb
 Enter a command and press enter
 add income
 Enter a command and press enter
-link prathik income 500000
+link usera income 500000
 Enter a command and press enter
-link lakshmi income 500000
+link userb income 500000
 Enter a command and press enter
 write
 Enter a command and press enter
