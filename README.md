@@ -33,7 +33,7 @@ $ java -jar jd3sankey-1.0-SNAPSHOT.jar
 Commands
 add <node-name> | example: add income
 link <source-node> <target-node> <value> | example link income savings 100000
-write | writes the data file and quit
+write | writes the data file
 help | lists the commands
 q | plain quit
 Enter a command and press enter
