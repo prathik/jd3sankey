@@ -1,13 +1,13 @@
 package rocks.thiscoder.jd3sankey;
 
-public class NodeToNodeLink {
-    private final Node sourceNode;
-    private final Node destinationNode;
+class NodeToNodeLink {
+    private final Node source;
+    private final Node target;
     private final Double value;
 
     NodeToNodeLink(Node sourceNode, Node destinationNode, Double value) {
-        this.sourceNode = sourceNode;
-        this.destinationNode = destinationNode;
+        this.source = sourceNode;
+        this.target = destinationNode;
         this.value = value;
     }
 
@@ -15,11 +15,11 @@ public class NodeToNodeLink {
         return value;
     }
 
-    Node getDestinationNode() {
-        return destinationNode;
+    public Node getTarget() {
+        return target;
     }
 
-    Node getSourceNode() {
-        return sourceNode;
+    public Node getSource() {
+        return source;
     }
 }
