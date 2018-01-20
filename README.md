@@ -4,6 +4,12 @@ Build cool d3 sankey diagrams using a REPL.
 
 ![Alt text](https://raw.githubusercontent.com/prathik/jd3sankey/master/ss.png?raw=true "Optional Title")
 
+# Features
+
+* Create a Sankey diagram
+* Store Sankey diagram as html (you can show it to others via github pages)
+* Read from an existing Sankey json
+
 # How to use
 
 ```bash
