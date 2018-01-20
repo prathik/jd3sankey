@@ -6,7 +6,7 @@ Build cool d3 sankey diagrams using a REPL.
 
 # How to use
 
-```shell
+```bash
 mvn package
 cd target
 java -jar jd3sankey-1.0-SNAPSHOT.jar
@@ -14,7 +14,7 @@ java -jar jd3sankey-1.0-SNAPSHOT.jar
 
 After entering the commands
 
-```shell
+```bash
 open index.html
 ```
 
