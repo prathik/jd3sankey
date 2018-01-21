@@ -15,11 +15,11 @@ public class Node implements Comparable {
         return description;
     }
 
-    public String getId() {
+    String getId() {
         return id;
     }
 
-    public int getIndex() {
+    int getIndex() {
         return index;
     }
 

@@ -3,6 +3,7 @@ package rocks.thiscoder.jd3sankey;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import org.eclipse.egit.github.core.Gist;
 
 import java.io.IOException;
 import java.util.*;
@@ -75,6 +76,7 @@ public class SankeyHandler {
         System.out.println("link <source-node> <target-node> <value> | example link income savings 100000");
         System.out.println("write | writes the data file and quit");
         System.out.println("read | reads from the local energy.json");
+        System.out.println("publish | publishes the images into gist");
         System.out.println("print | prints current system state");
         System.out.println("help | lists the commands");
         System.out.println("quit | plain quit");
@@ -120,7 +122,33 @@ public class SankeyHandler {
                 } catch (IOException e) {
                     System.out.println("Unable to read file.");
                 }
-            }else if(isPrintCommand(command)) {
+            } else if(isPublishCommand(command)) {
+                System.out.println("Enter github username");
+                String username = reader.next();
+                System.out.println("Enter github password");
+                String password = String.valueOf(System.console().readPassword());
+                System.out.println("Enter file description");
+                String description = System.console().readLine();
+
+                IndexWriter indexWriter = new IndexWriter();
+
+                GitHubHandler gitHubHandler = new GitHubHandler(username, password, description);
+                try {
+                    gitHubHandler.addFile("index.html", indexWriter.indexToString());
+                    gitHubHandler.addFile("energy.json", handler.writeJson());
+                } catch (IOException e) {
+                    System.out.println("Unable to read file contents");
+                }
+
+                try {
+                    Gist gitst = gitHubHandler.publish();
+                    System.out.println("Gist url: " + gitst.getHtmlUrl());
+                    System.out.println("bl.ocks.org URL: https://bl.ocks.org/" + username + "/" + gitst.getId());
+                } catch (IOException e) {
+                    System.out.println("Unable to publish to github");
+                }
+
+            } else if(isPrintCommand(command)) {
                 System.out.println(handler.writeJson());
             } else if(isHelpCommand(command)) {
                 commands();
@@ -128,6 +156,10 @@ public class SankeyHandler {
                 System.out.println("Invalid command");
             }
         }
+    }
+
+    private static boolean isPublishCommand(String command) {
+        return command.equals("publish");
     }
 
     private static boolean isReadCommand(String command) {

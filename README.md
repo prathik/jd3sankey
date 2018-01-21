@@ -9,6 +9,7 @@ Build cool d3 sankey diagrams using a REPL.
 * Create a Sankey diagram
 * Store Sankey diagram as html (you can show it to others via github pages)
 * Read from an existing Sankey json
+* Publish to github gist and view on bl.ocks.org
 
 # How to use
 
@@ -23,6 +24,10 @@ After entering the commands
 ```bash
 open index.html
 ```
+
+# Usecase
+
+Create the file locally by adding nodes and links, writing and opening the index.html generated on the browser. Everytime you write refresh the browser and see the changes. After you are happy with the generated sankey publish the chart to bl.ocks.org.
 
 # Example
 

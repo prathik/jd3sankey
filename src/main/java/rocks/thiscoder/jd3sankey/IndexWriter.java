@@ -14,6 +14,10 @@ class IndexWriter {
         IOUtils.copy(getClass().getResourceAsStream("/index.html"), new FileOutputStream("./index.html"));
     }
 
+    String indexToString() throws IOException {
+        return IOUtils.toString(getClass().getResourceAsStream("/index.html"), "UTF-8");
+    }
+
     void writeJson(String json) throws FileNotFoundException {
         try (PrintStream out = new PrintStream(new FileOutputStream("./energy.json"))) {
             out.print(json);
