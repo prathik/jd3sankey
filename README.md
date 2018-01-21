@@ -14,6 +14,7 @@ Build cool d3 sankey diagrams using a REPL.
 # Examples
 
 * [Split of effort taken to build jD3Sankey](https://bl.ocks.org/prathik/f3549b7a6199899f0270d3f33174a0a0)
+* [Household income, savings and expenses](https://bl.ocks.org/prathik/faffdbdffefc1061dd76d8ba5865254f)
 
 # How to use
 
