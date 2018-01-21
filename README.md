@@ -11,6 +11,10 @@ Build cool d3 sankey diagrams using a REPL.
 * Read from an existing Sankey json
 * Publish to github gist and view on bl.ocks.org
 
+# Examples
+
+* [Split of effort taken to build jD3Sankey](https://bl.ocks.org/prathik/f3549b7a6199899f0270d3f33174a0a0)
+
 # How to use
 
 ```bash
